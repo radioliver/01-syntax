@@ -7,17 +7,16 @@ const app = Vue.createApp({
             {id: 4, name: "ESP Eclipse", stock: 0},
             {id: 5, name: "PRS Custom 24", stock: 2}
         ]
-<<<<<<< HEAD
-       
-        return { guitars}
-    }
-})
-=======
+        const outOfStock = {color:"red", fontSize: "1.25rem"}
+        const OnlyFewLeft = {color:"orange", fontSize: "1.5rem"}
+        const inStock = {color:"lightgreen", fontSize: "0.75rem"}
 
-        return { guitars}
+        return { guitars,
+            outOfStock,
+            OnlyFewLeft,
+            inStock}
         }
     }
 )
->>>>>>> 8b43e3c24952295782ff40343aca0a2aa30e5643
 
 app.mount("#appdiv")
