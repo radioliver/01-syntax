@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 19a49fe344154a0b4f037a26e046757a1db12c3a
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Init Vue App</title>
     <script src="https://unpkg.com/vue@3"></script>
 </head>
+<<<<<<< HEAD
 
 <body>
     <div id="appdiv">
@@ -25,4 +29,24 @@
 
 </body>
 
+=======
+<body>
+    <div id="appdiv">  
+        <h1>Guitars</h1>
+        <div class="guitars">
+            <!-- <div v-for="guitar in guitars" :key="guitar.id">
+                <h2 v-if = "guitar.stock > 0">{{ guitar.name }}</h2>
+                
+            </div> -->
+            <template v-for="guitar in guitars" :key="guitar.id">
+                <h2 v-show = "guitar.stock > 0">{{ guitar.name }}</h2>
+                
+            </template>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+
+</body>
+>>>>>>> 19a49fe344154a0b4f037a26e046757a1db12c3a
 </html>

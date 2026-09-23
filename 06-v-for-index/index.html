@@ -9,8 +9,13 @@
 <body>
     <div id="appdiv">  
         <ul>
+<<<<<<< HEAD
             <li v-for="(framework, index) in frameworks" :key=`framework-${index}`>
                 {{index + 1}}. {{ framework.name }}
+=======
+            <li v-for="(framework, index) in frameworks" :key="`framework-${index}`">
+                {{ index + 1 }}. {{ framework.name }}
+>>>>>>> 19a49fe344154a0b4f037a26e046757a1db12c3a
             </li>
         </ul>
     </div>
